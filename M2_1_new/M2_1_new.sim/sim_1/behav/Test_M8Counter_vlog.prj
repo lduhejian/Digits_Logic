@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../M2_1_new.srcs/sources_1/imports/new/Counter.v"
+verilog xil_defaultlib  "../../../M2_1_new.srcs/sources_1/imports/new/Module8_Counter.v"
+verilog xil_defaultlib  "../../../M2_1_new.srcs/sources_1/imports/new/Adder.v"
+verilog xil_defaultlib  "../../../M2_1_new.srcs/sources_1/imports/new/Module8_Counter_All.v"
+verilog xil_defaultlib  "../../../M2_1_new.srcs/sim_1/imports/new/Module8_Test.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

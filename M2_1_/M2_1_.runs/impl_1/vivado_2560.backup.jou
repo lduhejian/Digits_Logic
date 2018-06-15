@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Jun 12 21:05:30 2018
+# Process ID: 848
+# Log file: C:/Users/Administor/Desktop/Logical/M2_1_/M2_1_.runs/impl_1/Module8_Counter.vdi
+# Journal file: C:/Users/Administor/Desktop/Logical/M2_1_/M2_1_.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Module8_Counter.tcl -notrace

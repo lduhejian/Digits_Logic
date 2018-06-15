@@ -1,0 +1,7 @@
+Running: xsim.dir/Test_M8Counter_behav/xsimk.exe -simmode gui -wdb Test_M8Counter_behav.wdb -simrunnum 0 -socket 63336
+Design successfully loaded
+Design Loading Memory Usage: 20328 KB (Peak: 20328 KB)
+Design Loading CPU Usage: 187 ms
+Simulation completed
+Simulation Memory Usage: 20764 KB (Peak: 20764 KB)
+Simulation CPU Usage: 187 ms

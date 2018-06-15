@@ -1,0 +1,139 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "pipe3b")
+(DATE "Tue Jun 05 16:57:52 2018")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2015.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE clk_IBUF_BUFG_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (113.0:120.0:120.0) (113.0:120.0:120.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE clk_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (600.5:725.7:725.7) (600.5:725.7:725.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE q1_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2126.5:2292.7:2292.7) (2126.5:2292.7:2292.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE q1_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (158.0:197.0:197.0) (158.0:197.0:197.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (146.0:183.0:183.0) (27.0:31.0:31.0))
+      (SETUPHOLD (negedge CE) (posedge C) (146.0:183.0:183.0) (27.0:31.0:31.0))
+      (SETUPHOLD (posedge D) (posedge C) (-41.0:-36.0:-36.0) (153.0:191.0:191.0))
+      (SETUPHOLD (negedge D) (posedge C) (-41.0:-36.0:-36.0) (153.0:191.0:191.0))
+      (SETUPHOLD (posedge R) (posedge C) (292.0:364.0:364.0) (15.0:18.0:18.0))
+      (SETUPHOLD (negedge R) (posedge C) (292.0:364.0:364.0) (15.0:18.0:18.0))
+    )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE q2_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2126.5:2292.7:2292.7) (2126.5:2292.7:2292.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE q2_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (158.0:197.0:197.0) (158.0:197.0:197.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (146.0:183.0:183.0) (27.0:31.0:31.0))
+      (SETUPHOLD (negedge CE) (posedge C) (146.0:183.0:183.0) (27.0:31.0:31.0))
+      (SETUPHOLD (posedge D) (posedge C) (-41.0:-36.0:-36.0) (153.0:191.0:191.0))
+      (SETUPHOLD (negedge D) (posedge C) (-41.0:-36.0:-36.0) (153.0:191.0:191.0))
+      (SETUPHOLD (posedge R) (posedge C) (292.0:364.0:364.0) (15.0:18.0:18.0))
+      (SETUPHOLD (negedge R) (posedge C) (292.0:364.0:364.0) (15.0:18.0:18.0))
+    )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sig_nsyn_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (600.5:725.7:725.7) (600.5:725.7:725.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE sig_syn_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2126.5:2292.7:2292.7) (2126.5:2292.7:2292.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE sig_syn_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (158.0:197.0:197.0) (158.0:197.0:197.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (146.0:183.0:183.0) (27.0:31.0:31.0))
+      (SETUPHOLD (negedge CE) (posedge C) (146.0:183.0:183.0) (27.0:31.0:31.0))
+      (SETUPHOLD (posedge D) (posedge C) (-41.0:-36.0:-36.0) (153.0:191.0:191.0))
+      (SETUPHOLD (negedge D) (posedge C) (-41.0:-36.0:-36.0) (153.0:191.0:191.0))
+      (SETUPHOLD (posedge R) (posedge C) (292.0:364.0:364.0) (15.0:18.0:18.0))
+      (SETUPHOLD (negedge R) (posedge C) (292.0:364.0:364.0) (15.0:18.0:18.0))
+    )
+)
+(CELL 
+    (CELLTYPE "pipe3b")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT clk_IBUF_BUFG_inst/O q1_reg/C (612.4:655.6:655.6) (612.4:655.6:655.6))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O q2_reg/C (612.4:655.6:655.6) (612.4:655.6:655.6))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O sig_syn_reg/C (612.4:655.6:655.6) (612.4:655.6:655.6))
+      (INTERCONNECT clk_IBUF_inst/O clk_IBUF_BUFG_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT q1_reg/Q q2_reg/D (412.9:470.0:470.0) (412.9:470.0:470.0))
+      (INTERCONNECT q1_reg/Q q1_OBUF_inst/I (638.4:688.6:688.6) (638.4:688.6:688.6))
+      (INTERCONNECT q2_reg/Q sig_syn_reg/D (412.9:470.0:470.0) (412.9:470.0:470.0))
+      (INTERCONNECT q2_reg/Q q2_OBUF_inst/I (638.4:688.6:688.6) (638.4:688.6:688.6))
+      (INTERCONNECT sig_nsyn_IBUF_inst/O q1_reg/D (650.4:703.6:703.6) (650.4:703.6:703.6))
+      (INTERCONNECT sig_syn_reg/Q sig_syn_OBUF_inst/I (638.4:688.6:688.6) (638.4:688.6:688.6))
+      )
+    )
+)
+)
