@@ -1,102 +1,507 @@
 Vivado Simulator 2015.2
 Time resolution is 1 ps
-RACP = 1
- 5
-RACP = 1
- 8
-RACP = 0
- 3
-RACP = 0
-12
-RACP = 0
- 6
-RACP = 1
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
-RACP = 0
- 8
-RACP = 0
-11
+Register input :A_INPUT is  x,B_INPUT is  x ,C_INPUT is  x , D_INPUT is  x 
+
+Register output: A_INPUT is  x,B_INPUT is  x ,C_INPUT is  x , D_INPUT is  x 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  3 ,C_INPUT is 12 , D_INPUT is  6 
+
+Register output: A_INPUT is  x,B_INPUT is  X ,C_INPUT is  x , D_INPUT is  x 
+
+Load is 1
+Register input :A_INPUT is  5,B_INPUT is  3 ,C_INPUT is 12 , D_INPUT is  6 
+
+Register output: A_INPUT is  5,B_INPUT is  3 ,C_INPUT is 12 , D_INPUT is  6 
+
+Load is 1
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is  5,B_INPUT is 11 ,C_INPUT is 12 , D_INPUT is  6 
+
+Load is 0
+Register input :A_INPUT is 11,B_INPUT is 11 ,C_INPUT is 11 , D_INPUT is 11 
+
+Register output: A_INPUT is  8,B_INPUT is 11 ,C_INPUT is 12 , D_INPUT is  6 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is  8,B_INPUT is  3 ,C_INPUT is 12 , D_INPUT is  6 
+
+Load is 0
+Register input :A_INPUT is  3,B_INPUT is  3 ,C_INPUT is  3 , D_INPUT is  3 
+
+Register output: A_INPUT is  8,B_INPUT is  5 ,C_INPUT is 12 , D_INPUT is  6 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is  8,B_INPUT is 13 ,C_INPUT is 12 , D_INPUT is  6 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is  8,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is  6 
+
+Load is 0
+Register input :A_INPUT is 14,B_INPUT is 14 ,C_INPUT is 14 , D_INPUT is 14 
+
+Register output: A_INPUT is  8,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is  6 
+
+Load is 0
+Register input :A_INPUT is  6,B_INPUT is  6 ,C_INPUT is  6 , D_INPUT is  6 
+
+Register output: A_INPUT is  8,B_INPUT is  5 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is 13,B_INPUT is 13 ,C_INPUT is 13 , D_INPUT is 13 
+
+Register output: A_INPUT is  8,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  2,B_INPUT is  2 ,C_INPUT is  2 , D_INPUT is  2 
+
+Register output: A_INPUT is 13,B_INPUT is  5 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  5,B_INPUT is  5 ,C_INPUT is  5 , D_INPUT is  5 
+
+Register output: A_INPUT is 13,B_INPUT is  0 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0
+Register input :A_INPUT is  8,B_INPUT is  8 ,C_INPUT is  8 , D_INPUT is  8 
+
+Register output: A_INPUT is 13,B_INPUT is 13 ,C_INPUT is  8 , D_INPUT is 14 
+
+Load is 0

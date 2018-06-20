@@ -24,6 +24,7 @@ module _74LS194_Register(
     input CP,
     input R_S1,
     input R_S0,
+    input Load,
     input D3,
     input D2,
     input D1,
@@ -31,31 +32,17 @@ module _74LS194_Register(
     output Q3,
     output Q2,
     output Q1,
-    output Q0,
-    input [3:0] init
+    output Q0
     );
     reg _Q3;
     reg _Q2;
     reg _Q1;
     reg _Q0;
-    
-    initial begin
-        {_Q3,_Q2,_Q1,_Q0} = init;
-    end
-    always @(posedge CP) begin
-        $display("%d",{_Q3,_Q2,_Q1,_Q0});
-        if(R_S0 & R_S1) begin
-            _Q3 = D3;
-            _Q2 = D2;
-            _Q1 = D1;
-            _Q0 = D0;
-        end
-        else begin
-            _Q3 = _Q3;
-            _Q2 = _Q2;
-            _Q1 = _Q1;
-            _Q0 = _Q0;
-        end
+    always @(posedge CP or posedge Load) begin
+        if(R_S1 & R_S0)
+            {_Q3,_Q2,_Q1,_Q0} = {D3,D2,D1,D0};
+        else
+            {_Q3,_Q2,_Q1,_Q0} = {_Q3,_Q2,_Q1,_Q0};
     end
     assign {Q3,Q2,Q1,Q0} = {_Q3,_Q2,_Q1,_Q0};
 endmodule

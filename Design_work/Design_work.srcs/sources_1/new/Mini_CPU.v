@@ -25,6 +25,23 @@ module Mini_CPU(
     input S1,
     input S0,
     input K,
+    input Load,
+    input _RA3,
+    input _RA2,
+    input _RA1,
+    input _RA0,
+    input _RB3,
+    input _RB2,
+    input _RB1,
+    input _RB0,
+    input _RC3,
+    input _RC2,
+    input _RC1,
+    input _RC0,
+    input _RD3,
+    input _RD2,
+    input _RD1,
+    input _RD0,
     output RA3,
     output RA2,
     output RA1,
@@ -72,35 +89,32 @@ module Mini_CPU(
     wire A_input[0:3];
     wire A_output[0:3];
     wire RACP;//时钟端
-    always @(posedge CP) $display("RACP = %d",RACP);
-    assign RACP = (CP & Dec_output_reverse[0]);
-    _74LS194_Register A_Register(RACP,1,1,A_input[3],A_input[2],A_input[1],A_input[0],A_output[3],A_output[2],A_output[1],A_output[0],'b0101);
+    assign RACP = ((CP & Dec_output_reverse[0])|(CP & Load));
+    _74LS194_Register A_Register(RACP,1,1,Load,A_input[3],A_input[2],A_input[1],A_input[0],A_output[3],A_output[2],A_output[1],A_output[0]);
 
     /*寄存器B的输入与输出端*/
     wire B_input[0:3];
     wire B_output[0:3];
     wire RBCP;
-    assign RBCP = (CP & Dec_output_reverse[1]);
-    _74LS194_Register B_Register(RBCP,1,1,B_input[3],B_input[2],B_input[1],B_input[0],B_output[3],B_output[2],B_output[1],B_output[0],'b0011);
+    assign RBCP = ((CP & Dec_output_reverse[1])|(CP & Load));
+    _74LS194_Register B_Register(RBCP,1,1,Load,B_input[3],B_input[2],B_input[1],B_input[0],B_output[3],B_output[2],B_output[1],B_output[0]);
     
     /*寄存器C的输入和输出端*/
     reg C_input_init[0:3];//存放寄存器的初始值
     wire C_input[0:3];
     wire C_output[0:3];
     wire RCCP;
-    assign RCCP = (CP & Dec_output_reverse[2]);
-    _74LS194_Register C_Register(RCCP,1,1,C_input[3],C_input[2],C_input[1],C_input[0],C_output[3],C_output[2],C_output[1],C_output[0],'b1100);
+    assign RCCP = ((CP & Dec_output_reverse[2])|(CP & Load));
+    _74LS194_Register C_Register(RCCP,1,1,Load,C_input[3],C_input[2],C_input[1],C_input[0],C_output[3],C_output[2],C_output[1],C_output[0]);
     
     /*寄存器D的输入和输出端*/
     reg D_input_init[0:3];//存放寄存器的初始值
     wire D_input[0:3];
     wire D_output[0:3];
     wire RDCP;
-    assign RDCP = (CP & Dec_output_reverse[3]);
-    _74LS194_Register D_Register(RDCP,1,1,D_input[3],D_input[2],D_input[1],D_input[0],D_output[3],D_output[2],D_output[1],D_output[0],'b0110);
-    
-
-    
+    assign RDCP = ((CP & Dec_output_reverse[3])|(CP & Load));
+    _74LS194_Register D_Register(RDCP,1,1,Load,D_input[3],D_input[2],D_input[1],D_input[0],D_output[3],D_output[2],D_output[1],D_output[0]);
+   
     /*B寄存器的取补码操作（用异或实现)*/
     wire B_output_XOR[0:3];wire C0;//加法器进位端
     assign B_output_XOR[3] = (Dec_output_reverse[1] ^ B_output[3]);
@@ -178,10 +192,22 @@ module Mini_CPU(
     _74LS153_MUX Mux_1(G_1,A_1[1],A_1[0],Mux_1_input[0],Mux_1_input[1],Mux_1_input[2],Mux_1_input[3],Mux_output[0]);
     
     /*处理寄存器的输入端*/
+    Two_MUX Two_MUX_A(Load,{_RA3,_RA2,_RA1,_RA0},{Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]},{A_input[3],A_input[2],A_input[1],A_input[0]});
+    Two_MUX Two_MUX_B(Load,{_RB3,_RB2,_RB1,_RB0},{Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]},{B_input[3],B_input[2],B_input[1],B_input[0]});
+    Two_MUX Two_MUX_C(Load,{_RC3,_RC2,_RC1,_RC0},{Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]},{C_input[3],C_input[2],C_input[1],C_input[0]});
+    Two_MUX Two_MUX_D(Load,{_RD3,_RD2,_RD1,_RD0},{Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]},{D_input[3],D_input[2],D_input[1],D_input[0]});
+    always @(CP) begin 
+        $display("Register input :A_INPUT is %d,B_INPUT is %d ,C_INPUT is %d , D_INPUT is %d \n",{A_input[3],A_input[2],A_input[1],A_input[0]},{B_input[3],B_input[2],B_input[1],B_input[0]},{C_input[3],C_input[2],C_input[1],C_input[0]},{D_input[3],D_input[2],D_input[1],D_input[0]});
+        $display("Register output: A_INPUT is %d,B_INPUT is %d ,C_INPUT is %d , D_INPUT is %d \n",{A_output[3],A_output[2],A_output[1],A_output[0]},{B_input[3],B_output[2],B_output[1],B_output[0]},{C_output[3],C_output[2],C_output[1],C_output[0]},{D_output[3],D_output[2],D_output[1],D_output[0]});
+        $display("Load is %d",Load);
+    end
+/*    
     assign {A_input[3],A_input[2],A_input[1],A_input[0]} = {Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]};
     assign {B_input[3],B_input[2],B_input[1],B_input[0]} = {Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]};
     assign {C_input[3],C_input[2],C_input[1],C_input[0]} = {Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]};
     assign {D_input[3],D_input[2],D_input[1],D_input[0]} = {Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]};
+*/
+    
     /*处理解码器部分*/
     wire Dec_input[0:1];
     wire Dec_G;//使能端
