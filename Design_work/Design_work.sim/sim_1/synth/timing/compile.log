@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administor/Desktop/Logical/Design_work/Design_work.sim/sim_1/synth/timing/sim_Mini_CPU_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mini_CPU
+INFO: [VRFC 10-311] analyzing module _74LS194_Register
+INFO: [VRFC 10-311] analyzing module _74LS194_Register_0
+INFO: [VRFC 10-311] analyzing module _74LS194_Register_1
+INFO: [VRFC 10-311] analyzing module _74LS194_Register_2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administor/Desktop/Logical/Design_work/Design_work.srcs/sim_1/new/sim_Mini_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_Mini_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administor/Desktop/Logical/Design_work/Design_work.sim/sim_1/synth/timing/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [C:/Users/Administor/Desktop/Logical/Design_work/Design_work.sim/sim_1/synth/timing/glbl.v:6]

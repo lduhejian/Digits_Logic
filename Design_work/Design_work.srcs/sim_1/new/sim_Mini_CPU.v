@@ -65,7 +65,7 @@ module sim_Mini_CPU();
          Load = #5 1;
         /*测试一：加法功能*/
         Load = #20 0;
-        {S1,S0} = #15 1;
+        {S1,S0} = #25 1;
         
         /*测试二：减法功能*/
         {S1,S0} = #20 2;
@@ -80,7 +80,7 @@ module sim_Mini_CPU();
     end
     //时钟周期为20ns
     always #10 begin
-        CP = ~CP;
+        CP <= ~CP;
     end
     Mini_CPU test_mini_cpu(CP,S1,S0,K,Load,REGA[3],REGA[2],REGA[1],REGA[0],REGB[3],REGB[2],REGB[1],REGB[0],REGC[3],REGC[2],REGC[1],REGC[0],
     REGD[3],REGD[2],REGD[1],REGD[0],RA3,RA2,RA1,RA0,RB3,RB2,RB1,RB0,RC3,RC2,RC1,RC0,RD3,RD2,RD1,RD0);

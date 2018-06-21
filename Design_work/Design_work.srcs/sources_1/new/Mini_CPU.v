@@ -61,7 +61,6 @@ module Mini_CPU(
     );
     wire Dec_output_reverse[0:3];
     /*设置寄存器的初始值
-    
     initial begin
         {A_input_init[3],A_input_init[2],A_input_init[1],A_input_init[0]} = 5;//'b0101;
         {B_input_init[3],B_input_init[2],B_input_init[1],B_input_init[0]} = 3;// 'b0011;
@@ -69,7 +68,7 @@ module Mini_CPU(
         {D_input_init[3],D_input_init[2],D_input_init[1],D_input_init[0]} = 6;//'b0110;
     end
     
-    /***************************************不确定部分**********************************
+    /***************************************此处用always不合适，直接用连续赋值更好**********************************
     always @(posedge CP) begin
         if(!K) begin //使能端有效时
             {A_input[3],A_input[2],A_input[1],A_input[0]} <= {Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]};
@@ -196,6 +195,8 @@ module Mini_CPU(
     Two_MUX Two_MUX_B(Load,{_RB3,_RB2,_RB1,_RB0},{Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]},{B_input[3],B_input[2],B_input[1],B_input[0]});
     Two_MUX Two_MUX_C(Load,{_RC3,_RC2,_RC1,_RC0},{Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]},{C_input[3],C_input[2],C_input[1],C_input[0]});
     Two_MUX Two_MUX_D(Load,{_RD3,_RD2,_RD1,_RD0},{Mux_output[3],Mux_output[2],Mux_output[1],Mux_output[0]},{D_input[3],D_input[2],D_input[1],D_input[0]});
+   /*
+   调试信息
     always @(CP) begin 
         $display("Register input :A_INPUT is %d,B_INPUT is %d ,C_INPUT is %d , D_INPUT is %d \n",{A_input[3],A_input[2],A_input[1],A_input[0]},{B_input[3],B_input[2],B_input[1],B_input[0]},{C_input[3],C_input[2],C_input[1],C_input[0]},{D_input[3],D_input[2],D_input[1],D_input[0]});
         $display("Register output: A_INPUT is %d,B_INPUT is %d ,C_INPUT is %d , D_INPUT is %d \n",{A_output[3],A_output[2],A_output[1],A_output[0]},{B_input[3],B_output[2],B_output[1],B_output[0]},{C_output[3],C_output[2],C_output[1],C_output[0]},{D_output[3],D_output[2],D_output[1],D_output[0]});

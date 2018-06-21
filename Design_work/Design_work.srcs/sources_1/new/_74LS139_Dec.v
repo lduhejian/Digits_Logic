@@ -36,7 +36,7 @@ module _74LS139_Dec(G,A1,A0,Y3,Y2,Y1,Y0);
         Y1 = 1;
         Y0 = 1;
     end
-    always @(*) begin
+    always @(A1 or A0 or G  or Y0 or Y1 or Y2 or Y3) begin
         if(G) begin //使能端是低电平有效，当高电平时无效
             Y3 = 1;
             Y2 = 1;
@@ -69,6 +69,13 @@ module _74LS139_Dec(G,A1,A0,Y3,Y2,Y1,Y0);
                     Y1 = 1;
                     Y0 = 1;
                   end
+                default:
+                    begin
+                    Y3 = 1;
+                    Y2 = 1;
+                    Y1 = 1;
+                    Y0 = 1;
+                    end
             endcase
         end
     end

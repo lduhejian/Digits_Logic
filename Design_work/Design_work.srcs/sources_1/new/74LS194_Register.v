@@ -38,11 +38,14 @@ module _74LS194_Register(
     reg _Q2;
     reg _Q1;
     reg _Q0;
-    always @(posedge CP or posedge Load) begin
+    initial begin
+        {_Q3,_Q2,_Q1,_Q0} = 0;
+    end
+    always @(posedge CP) begin
         if(R_S1 & R_S0)
-            {_Q3,_Q2,_Q1,_Q0} = {D3,D2,D1,D0};
+            {_Q3,_Q2,_Q1,_Q0} <= {D3,D2,D1,D0};
         else
-            {_Q3,_Q2,_Q1,_Q0} = {_Q3,_Q2,_Q1,_Q0};
+            {_Q3,_Q2,_Q1,_Q0} <= 0;
     end
     assign {Q3,Q2,Q1,Q0} = {_Q3,_Q2,_Q1,_Q0};
 endmodule

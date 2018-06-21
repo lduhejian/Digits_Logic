@@ -29,7 +29,7 @@ module _74LS153_MUX(G,A1,A0,D0,D1,D2,D3,Y);
     input D2;
     input D3;
     output reg Y;
-    always @(*) begin
+    always @(G or A1 or A0 or D0 or D1 or D2 or D3) begin
         if(G) begin //使能端为1（无效时）
             Y = 1;
         end
@@ -47,6 +47,8 @@ module _74LS153_MUX(G,A1,A0,D0,D1,D2,D3,Y);
                 3:begin
                     Y = D3;
                   end
+                default:
+                    Y = 0;
             endcase
         end
     end

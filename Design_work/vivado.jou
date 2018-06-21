@@ -2,10 +2,127 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Mon Jun 18 16:31:54 2018
-# Process ID: 11076
+# Start of session at: Wed Jun 20 19:49:24 2018
+# Process ID: 5380
 # Log file: C:/Users/Administor/Desktop/Logical/Design_work/vivado.log
 # Journal file: C:/Users/Administor/Desktop/Logical/Design_work\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Administor/Desktop/Logical/Design_work/Design_work.xpr
+synth_design -rtl -name rtl_1
+launch_simulation
+source sim_Mini_CPU.tcl
+synth_design -rtl -name rtl_1
+write_schematic -format pdf -orientation portrait C:/Users/Administor/Desktop/Logical/M2-3/schematic.pdf
+write_schematic -format pdf -orientation portrait C:/Users/Administor/Desktop/schematic.pdf
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type functional
+source sim_Mini_CPU.tcl
+close_sim
+launch_simulation -mode post-synthesis -type functional
+source sim_Mini_CPU.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation -mode post-synthesis -type functional
+source sim_Mini_CPU.tcl
+close_sim
+launch_simulation
+source sim_Mini_CPU.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation -mode post-synthesis -type functional
+source sim_Mini_CPU.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation -mode post-synthesis -type functional
+source sim_Mini_CPU.tcl
+close_sim
+launch_simulation
+source sim_Mini_CPU.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+close_sim
+launch_simulation -mode post-synthesis -type functional
+source sim_Mini_CPU.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sig_Two_Mux [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation -mode post-synthesis -type functional
+source sig_Two_Mux.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sim_Adder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation -mode post-synthesis -type functional
+source sim_Adder.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sim_Dec [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source sim_Dec.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sim_MUX [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation -mode post-synthesis -type functional
+source sim_MUX.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sim_Register [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation -mode post-synthesis -type functional
+source sim_Register.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sim_Mini_CPU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation -mode post-synthesis -type timing
+source sim_Mini_CPU.tcl
+close_sim
+launch_simulation
+source sim_Mini_CPU.tcl
+close_sim
+close_sim
+close_sim
+close_sim
+close_sim
+close_sim
+close_sim
+close_sim

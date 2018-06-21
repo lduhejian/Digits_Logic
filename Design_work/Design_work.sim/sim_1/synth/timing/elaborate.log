@@ -1,0 +1,30 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 60aa1f8b0b9245e3b26f8b21f0174871 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot sim_Mini_CPU_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.sim_Mini_CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "sim_Mini_CPU_time_synth.sdf", for root module "sim_Mini_CPU/test_mini_cpu".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "sim_Mini_CPU_time_synth.sdf", for root module "sim_Mini_CPU/test_mini_cpu".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.sffsrce_fdre
+Compiling module simprims_ver.FDRE
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.x_lut3_mux4_reduced_0
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT6
+Compiling module xil_defaultlib._74LS194_Register
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib._74LS194_Register_0
+Compiling module simprims_ver.IBUF
+Compiling module xil_defaultlib._74LS194_Register_1
+Compiling module xil_defaultlib._74LS194_Register_2
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.Mini_CPU
+Compiling module xil_defaultlib.sim_Mini_CPU
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot sim_Mini_CPU_time_synth
